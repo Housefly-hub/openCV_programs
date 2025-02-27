@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-from image_mean_filter import resize_image 
+from snippet import resize_image
 
 image = cv.imread("./images/Avatar_Boy.png",cv.IMREAD_GRAYSCALE)
 print(image)
