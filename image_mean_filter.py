@@ -45,10 +45,6 @@ def resize_image(image, max_size=500):
     # Resize the image using INTER_AREA interpolation (good for downscaling)
     return cv.resize(image, (new_w, new_h), interpolation=cv.INTER_AREA)
 
-# image = cv.imread('./images/Image17.webp')
-# borderd_image = cv.copyMakeBorder(resize_image(image, max_size=500),10,10,10,10,cv.BORDER_CONSTANT,value=(50,18,255))
-
-
 # Load the input image in grayscale mode (0-255 intensity values)
 image = cv.imread('./images/Girl.png', cv.IMREAD_GRAYSCALE) 
 
